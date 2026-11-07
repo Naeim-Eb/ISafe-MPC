@@ -1,0 +1,13 @@
+Ex1  (Ts=1)     F1: median solve    4.64 ms, cost 434.90
+Ex1  (Ts=1)    F1h: median solve    6.03 ms, cost 419.81
+Ex1  (Ts=1)     F2: median solve    4.05 ms, cost 309.30
+Ex1  (Ts=1)     F3: median solve    4.21 ms, cost 312.73
+Ex1  (Ts=1)     F4: median solve   19.26 ms, cost 312.08
+Ex1B (Ts=0.1)   F2: median solve   22.47 ms, cost 252.92
+Ex1B (Ts=0.1)   F3: median solve   32.49 ms, cost 253.03
+Ex1B (Ts=0.1)  F3C: median solve   34.53 ms, cost 253.03
+Ex1B (Ts=0.1)   F4: median solve  200.40 ms, cost 253.00
+Ex2  (Ts=0.1)   F1: median solve   34.38 ms, cost 91.82
+Ex2  (Ts=0.1)   F2: median solve   27.61 ms, cost 88.35
+Ex2  (Ts=0.1)   F3: median solve   37.07 ms, cost 90.48
+Ex2  (Ts=0.1) F3SD: median solve   37.33 ms, cost 88.50

@@ -1,0 +1,10 @@
+
+(B) Constructive route, Ts = 0.1, N = 80
+  LQR R=8.7, rho=9.770, a=mu=0.7199, delta=7.0333, M_h2=118.65, T*=0.1186 (>= Ts: True), eta_c=0.1634, xe1=-1.7124, max x1 on S_L=0.8366
+  certificate check: max|u|=0.9990, min beta_h=7.897e-06, min h between samples=3.798e-02, min beta_c=1.683e-01
+    method      viol  #inf     cost     ms | #feas #viol #lost     worst
+  F4: eps_m = 3.13e-06, on boundary of its terminal set: min gridded constraint -1.18e-16, max violation of F(x,u) in S: 1.1e-16
+        F2  0.000588     0   252.92  22.54 |    91    91     0  0.001222 fb=0
+        F3  0.000000     0   253.03  36.12 |    91     0     0  0.000000 fb=0
+       F3C  0.000000     0   253.03  36.71 |    91     0     0  0.000000 fb=0
+        F4  0.000000     0   253.00 164.83 |    91     0     0  0.000000 fb=0

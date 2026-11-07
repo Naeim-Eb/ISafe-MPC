@@ -1,0 +1,20 @@
+Example 2: PVTOL, Ts = 0.1, N = 20, M3 = 107.91, eta(F3) = 17.99 mm, eta(F3SD) = 2.076 mm
+
+Nominal closed loop (12 s, waypoints beyond wall/floor):
+method  viol[mm]  #infeas #fallback     cost t_solve[ms] min margin[mm]  RK4 mismatch
+    F1     0.195        0         0    91.82        39.7          -0.19      7.67e-08
+    F2     1.865        0         0    88.35        33.6          -1.86      4.92e-08
+    F3     0.000        0         0    90.48        42.1          14.60      4.92e-08
+  F3SD     0.000        0         0    88.50        51.4           0.28      4.92e-08
+
+Monte Carlo (60 random x0, 12 s; only starts feasible at t=0 are run):
+method  #feas x0  #viol runs  #lost feas  worst[mm]  #fallback steps
+    F1        57          57           0      0.194                0
+    F2        60          60           0      4.920                0
+    F3        59           0           0      0.000                1
+  F3SD        59           0           0      0.000                1
+
+Sampling-time sweep (horizon 2 s): viol[mm] / #infeasible / cost / #fallback steps
+Ts=0.05  F1: 0.007/0/86.95/fb0  F2: 0.278/0/86.47/fb0  F3: 0.000/0/86.67/fb0  F3SD: 0.000/0/86.48/fb0  eta(F3)=1.7mm eta(F3SD)=0.13mm
+Ts=0.10  F1: 0.195/0/91.82/fb0  F2: 1.865/0/88.35/fb0  F3: 0.000/0/90.48/fb0  F3SD: 0.000/0/88.50/fb0  eta(F3)=18.0mm eta(F3SD)=2.08mm
+Ts=0.20  F1: 0.000/0/109.67/fb0  F2: 6.372/0/94.97/fb0  F3: 0.000/0/123.95/fb0  F3SD: 0.000/0/97.09/fb1  eta(F3)=209.3mm eta(F3SD)=32.96mm

@@ -1,0 +1,23 @@
+(a) h' + 2h - 2rho under u = -5x1-4x2 (should be 0): 0
+    max |u| on S = 0.4031  (paper: <= 0.41)
+(b) Ts = 1.5: h(0, 0.1) = -1.73e-18
+    max_|u|<=1 h(x_k+1) = -0.00704  (paper: < 0)
+    min over all u in R of 4x1^2+(x1+x2)^2 = 0.01704 at u = -0.223  (> rho = 0.01: no input keeps x_k+1 in S)
+    x2 amplification over one hold: e^(2Ts) = 20.09
+(c) min over boundary of max_|u|<=1 h(x_k+1):
+    Ts =  0.50: +0.00486
+    Ts =  1.00: +0.00191
+    Ts =  1.10: +0.00059
+    Ts =  1.15: -0.00016
+    Ts =  1.20: -0.00097
+    Ts =  1.25: -0.00183
+    Ts =  1.50: -0.00712
+    boundary of S can be kept in S up to Ts ~= 1.140 s
+    whole S, Ts = 1.1: min_x max_u h(x_k+1) = +0.00059  (DT-CI)
+    whole S, Ts = 1.15: min_x max_u h(x_k+1) = -0.00016  (not DT-CI)
+(d) on S: |x1| <= 0.0500, |x2| <= 0.1118
+    Ts <= 0.02: |x1| <= 0.0536 <= 0.06, |x2| <= 0.1390 <= 0.18 on the tube (bootstrap with R)
+    M_h2 = sup_RxU |h''| = 7.6136  (grid 7.6136, local opt 7.6136); paper uses 7.62
+    T* = min(1/a, 2 delta/M_h2) = min(0.5, 0.00525) = 5.249 ms
+(e) Ts = T* = 5.249 ms, 300 runs x 381 steps, 50 points/interval, adversarial admissible input:
+    steps with no admissible input: 0;  min_t h(x(t)) = 2.099e-06  (>= 0 required)
